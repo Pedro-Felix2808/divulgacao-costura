@@ -1,0 +1,890 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.menu-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.menu-header a {
+    display: block;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu-header a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.menu-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.menu-header a {
+    display: block;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu-header a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+header picture {
+    display: block;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+main {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: carrossel 12s infinite;
+}
+
+.slides img {
+    width: 33.3333%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes carrossel {
+
+    0%, 28% {
+        transform: translateX(0);
+    }
+
+    33.33%, 61% {
+        transform: translateX(-33.3333%);
+    }
+
+    66.66%, 94% {
+        transform: translateX(-66.6667%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.origem {
+    width: 100%;
+    padding: 45px 20px 30px;
+    position: relative;
+}
+
+.texto-origem {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    margin-left: 25px;
+    min-height: 180px;
+    padding: 45px 25px 25px;
+    display: block;
+}
+
+.img-origem {
+    display: none;
+    width: 100%;
+}
+
+.titulo-origem {
+    background-color: #cc1111;
+    border-radius: 15px;
+    width: 110px;
+    height: 48px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-origem h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.texto-origem p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.4;
+}
+
+.sobre {
+    width: 100%;
+    min-height: 90px;
+    background-color: #b91c1c;
+    border-left: 6px solid #ff4747;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 30px;
+}
+
+.sobre h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nos {
+    width: 100%;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+}
+
+.qualidade,
+.fidelidade,
+.reconhecimento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fidelidade {
+    flex-direction: row-reverse;
+}
+
+.nos img {
+    width: 50%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.txtqualidade,
+.txtfidelidade,
+.txtreconhecimento {
+    width: 45%;
+    min-height: 130px;
+    background-color: #808080;
+    color: white;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nos p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cursos-disponiveis {
+    width: 100%;
+    min-height: 90px;
+    background-color: #b91c1c;
+    border-left: 6px solid #ff4747;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 30px;
+}
+
+.cursos-disponiveis h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cursos {
+    width: 100%;
+    background-color: white;
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.curso {
+    width: 100%;
+}
+
+.curso h3 {
+    background-color: #d9d9d9;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0;
+}
+
+.faixa-vermelha {
+    width: 100%;
+    padding: 30px 20px 10px;
+    position: relative;
+    isolation: isolate;
+}
+
+.faixa-vermelha::before {
+    content: "";
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+    right: 40px;
+    bottom: 40px;
+
+    background-color: #c81010;
+    z-index: -1;
+}
+
+.faixa-vermelha img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    position: relative;
+    z-index: 1;
+}
+
+.descricao-curso {
+    background-color: #d9d9d9;
+    padding: 20px;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.descricao-curso p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    margin: 0;
+
+    flex: 1;
+}
+
+
+.botao-curso {
+    align-self: flex-end;
+
+    padding: 8px 14px;
+
+    background-color: transparent;
+    border: 1px solid #b91c1c;
+    border-radius: 20px;
+
+    color: #b91c1c;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.botao-curso:hover {
+    background-color: #b91c1c;
+    color: #ffffff;
+}
+
+
+
+.botao-curso:focus-visible {
+    outline: 2px solid #b91c1c;
+    outline-offset: 3px;
+}
+
+footer {
+    width: 100%;
+    background-color: #b91c1c;
+}
+
+footer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #b91c1c;
+    position: relative;
+}
+
+footer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.botao-senai {
+    position: absolute;
+
+    right: 12%;
+    bottom: 15%;
+
+    width: 30%;
+    height: 35%;
+
+    display: block;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.botao-senai:focus-visible {
+    outline: 2px solid white;
+}
+
+
+
+.botao-instagram,
+.botao-youtube {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.botao-instagram {
+    left: 10%;
+    bottom: 15%;
+    width: 12%;
+    height: 40%;
+}
+
+
+
+.botao-youtube {
+    left: 28%;
+    bottom: 15%;
+    width: 15%;
+    height: 40%;
+}
+
+
+
+.botao-instagram:focus-visible,
+.botao-youtube:focus-visible {
+    outline: 2px solid white;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        width: 100%;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+    main {
+        width: 100%;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slides img {
+        height: 100%;
+        object-fit: cover;
+    }
+ 
+
+    .origem {
+        width: 100%;
+        padding: 60px 50px 50px;
+        position: relative;
+    }
+
+    .texto-origem {
+        min-height: 250px;
+        margin-left: 40px;
+        padding: 60px 40px 30px;
+        border-radius: 10px;
+    }
+
+    .titulo-origem {
+        width: 160px;
+        height: 60px;
+        top: 30px;
+        left: 30px;
+        border-radius: 15px;
+    }
+
+    .titulo-origem h2 {
+        font-size: 26px;
+    }
+
+    .texto-origem p {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+
+    .sobre {
+        width: 100%;
+        min-height: 90px;
+        padding: 20px 40px;
+    }
+
+    .sobre h2 {
+        font-size: 26px;
+    }
+
+
+    .nos {
+        width: 100%;
+        padding: 50px 50px 60px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .qualidade,
+    .fidelidade,
+    .reconhecimento {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .fidelidade {
+        flex-direction: row-reverse;
+    }
+
+    .nos img {
+        width: 45%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .txtqualidade,
+    .txtfidelidade,
+    .txtreconhecimento {
+        width: 40%;
+        min-height: 180px;
+        padding: 25px;
+    }
+
+    .nos p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
+    .cursos-disponiveis {
+        width: 100%;
+        min-height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px 40px;
+    }
+
+    .cursos-disponiveis h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+
+
+    .cursos {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 40px;
+        row-gap: 50px;
+
+        padding: 40px;
+        align-items: start;
+    }
+
+    .curso {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .curso h3 {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+
+
+    .faixa-vermelha {
+        width: 100%;
+        height: auto;
+        padding: 30px 15px 10px;
+
+        position: relative;
+        isolation: isolate;
+        background-color: transparent;
+    }
+
+    .faixa-vermelha::before {
+        content: "";
+        position: absolute;
+
+        top: 10px;
+        left: 0;
+        right: 30px;
+        bottom: 35px;
+
+        background-color: #c81010;
+        z-index: -1;
+    }
+
+    .faixa-vermelha img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .descricao-curso p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+
+    footer {
+        width: 100%;
+    }
+
+    footer picture {
+        display: block;
+        width: 100%;
+    }
+
+    footer img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .botao-instagram {
+        left: 8%;
+        bottom: 12%;
+        width: 8%;
+        height: 45%;
+    }
+
+    .botao-youtube {
+        left: 20%;
+        bottom: 12%;
+        width: 10%;
+        height: 45%;
+    }
+
+}
+   
+
+@media (min-width: 1024px) {
+
+
+    header {
+        width: 100%;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+    main {
+        width: 100%;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+    }
+
+
+    .texto-origem {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-origem {
+        display: block;
+        width: 30%;
+    }
+
+    .titulo-origem h2 {
+        font-size: clamp(26px, 2vw, 34px);
+    }
+
+    .texto-origem p {
+        font-size: clamp(22px, 1.6vw, 28px);
+    }
+
+
+    .sobre h2 {
+        font-size: clamp(26px, 2.2vw, 36px);
+    }
+
+
+    .nos {
+        padding: 70px 7% 90px;
+        gap: 70px;
+    }
+
+    .qualidade,
+    .fidelidade,
+    .reconhecimento {
+        gap: 60px;
+    }
+
+    .fidelidade {
+        flex-direction: row-reverse;
+    }
+
+    .nos img {
+        width: 42%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .txtqualidade,
+    .txtfidelidade,
+    .txtreconhecimento {
+        width: 40%;
+        min-height: 250px;
+        padding: 30px;
+    }
+
+    .nos p {
+        font-size: clamp(20px, 1.6vw, 27px);
+        line-height: 1.5;
+    }
+
+    .cursos-disponiveis h2 {
+        font-size: clamp(28px, 2.2vw, 38px);
+    }
+
+
+    .cursos {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        column-gap: 30px;
+        row-gap: 60px;
+
+        padding: 70px 3% 120px;
+        align-items: stretch;
+    }
+
+    .curso {
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .curso h3 {
+        font-size: clamp(18px, 1.3vw, 24px);
+        line-height: 1.3;
+        padding: 15px;
+    }
+
+
+    .faixa-vermelha {
+        width: 100%;
+        height: auto;
+        padding: 30px 15px 10px;
+
+        position: relative;
+        isolation: isolate;
+        background-color: transparent;
+    }
+
+    .faixa-vermelha::before {
+        content: "";
+        position: absolute;
+
+        top: 10px;
+        left: 0;
+        right: 30px;
+        bottom: 35px;
+
+        background-color: #c81010;
+        z-index: -1;
+    }
+
+    .faixa-vermelha img {
+        display: block;
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .descricao-curso {
+        flex: 1;
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    .descricao-curso p {
+        font-size: clamp(18px, 1.25vw, 24px);
+        line-height: 1.6;
+    }
+
+
+    footer {
+        width: 100%;
+        position: relative;
+        background-color: #b91c1c;
+    }
+
+    footer img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+      
+    .botao-instagram {
+        position: absolute;
+
+        left: 10.5%;
+        bottom: 10%;
+
+        width: 5%;
+        height: 55%;
+
+        display: block;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .botao-youtube {
+        left: 17%;
+        bottom: 10%;
+        width: 6%;
+        height: 55%;
+    }
+
+}
+
+
+
