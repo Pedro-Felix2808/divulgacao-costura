@@ -717,15 +717,29 @@ footer img {
     }
 
 
-    .texto-origem {
-        display: flex;
-        flex-direction: row;
-    }
 
-    .img-origem {
-        display: block;
-        width: 30%;
-    }
+.texto-origem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.texto-origem p {
+    flex: 1;
+    min-width: 0;
+}
+
+.img-origem {
+    display: block;
+    width: 30%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
 
     .titulo-origem h2 {
         font-size: clamp(26px, 2vw, 34px);
